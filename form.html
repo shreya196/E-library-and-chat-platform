@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FormReponsive</title>
+	<link rel="stylesheet" type="text/css" href="form.css">></link>
+	<link type="text/javascript" href="captcha.js">
+	<meta charset="utf-8" name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<body onload="CaptchaChange()">
+
+<div id="form">
+	<div><span>SignUP</span> <span id="signin">SignIN</span> </div>
+
+
+	<div id="formL">
+		<form action="signup.php" method="POST">
+			<div id="formlLeftAside">
+				<div id="lable1">Name</div>
+				<div id="lable1">Year</div>
+				<div id="lable1">RollNo</div>
+				<div id="lable1">Email</div>
+				<div id="lable1">Password</div>
+				<div id="lable1">Mobile</div>
+			</div>
+
+			<div id=formlRightAside>
+				<div id="ll">
+					<div id="inputL">
+						<input type="text" name="fname" placeholder="FirstName" required="required">
+					</div>	
+					<div id="inputL">
+						<select required name="year">
+							<option selected value="">Year</option>
+							<option value="First">First</option>
+							<option value="Second">Second</option>
+							<option value="Third">Third</option>
+							<option value="Fourth">Fourth</option>
+							<option value="Fifth">Fifth</option>
+						</select>
+					</div>
+					<div id="inputL">
+						<input type="text" name="rollNo" required="required" placeholder="Roll Number">
+					</div>
+					<div id="inputL">
+						<input type="email" name="email" required="required" placeholder="Email">
+					</div>
+					<div id="inputL">
+						<input type="password" name="password" required="required" placeholder="Password">
+					</div>
+					<div id="inputL">
+						<input type="number" name="mobile" required="required" placeholder="Mobile Number">
+					</div>
+
+				</div>
+
+
+				<div id="lr">
+					<div id="inputLR">
+						<input type="text" name="lname" placeholder="LastName" required="required" >
+					</div>
+
+					<div id="inputLR">
+						<select required name="branch" >
+							<option selected value="">Branch</option>
+							<option value="CSE">CSE</option>
+							<option value="EEE">EEE</option>
+							<option value="ECE">ECE</option>
+							<option value="chemical">CHE</option>
+							<option value="mechanical">MECH</option>
+							<option value="civil">CIVIL</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<button id="b1" type="submit"> SignUp </button>
+			<button id="b2" type="reset" > Reset </button>		
+		</form>
+	</div>
+
+
+
+	<div id="formR">
+		<form action="signin.php" method="POST">
+			<div id="formRLeftAside">
+				<div id="lable2">Enter Your Email ID </div>
+				<div id="lable2">Enter Your Password</div>
+			</div>
+			
+			<div id=formRRightAside>
+				<div id="inputR">
+					<input type="email" name="username" required="required" placeholder="EmailID">
+				</div>
+				<div id="inputR">
+					<input type="password" name="PassWord" required="required" placeholder="Password">
+				</div>
+			</div>
+
+			<button onclick="check(); CaptchaChange();" id="b3" type="submit"> Sign IN </button>
+
+			<div id="random">
+				<input type="text" id="randomfield" disabled>
+			</div>
+
+
+			<div id="captcha">
+					<input id="captchaEnter" type="text" name="captcha" placeholder="Human...EnterCaptcha" maxlength="6">
+			</div>
+		</form>	
+		<button onclick="CaptchaChange()" id="b4"></button>
+	</div>
+</div>
+</body>
+
+
+<script type="text/javascript">
+/*
+	function CaptchaChange(){
+		var chars = "0123456789QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm";
+		var string_length = 6;
+		var CaptchaChange = '';
+		for(var i = 0; i<string_length; i++){
+			var aa = Math.random();
+//			console.log(aa*chars.length);
+			var rnum = Math.floor(aa * chars.length);
+//			console.log(Math.floor(aa*chars.length))
+			CaptchaChange += chars.substring(rnum,rnum+1);
+//			console.log(CaptchaChange);
+		}
+		document.getElementById('randomfield').value = CaptchaChange;
+	}
+
+	function check() {
+		if(document.getElementById('captchaEnter').value==''){
+			alert('Properly Fill the form');
+		}
+
+		else if (document.getElementById('captchaEnter').value == document.getElementById('randomfield').value) {
+			alert('Sigining In....Checking other credentials!');
+		}
+		else{
+			alert('Please Re-check captcha');
+		}
+	}
+*/
+</script>	
+
+
+</html>

@@ -1,0 +1,9 @@
+Our project name is "NITH E-Library and Student Teacher chat platform".
+
+ssssFrom,the name itself we can conclude that this project is mainly based on the concept of e-library which is very useful during the exam times and also students can clear their doubts and bring any suggestion through the student teacher chat platform.
+The front end of this project is designed using HTML,CSS and Bootstrap.The back end of the project is designed using PHP.
+Following are the main features of our project;
+1.   On the home page ,there  are choices available for all the branches  .After clicking on the particular branch,we have to click  on the desired year.Then we will get the option for various subjects of which pdf we want to download.Along with downloading the pdf we also have the option for uploading the pdf ,if we want to upload there.
+2.   On student teacher chat platform the student has two options either to sign up or he/she can go annoymously .If he wants to chat as annonymous then he is directly guided to the platform .Otherwise first he has to sign up,then after logging into his respective account ,the student can ask his/her particuar doubt on the platform .The teacher whomsoever is concerned with that particular subject can clear his doubts or can hear his suggestions.
+Further, any suggestions are welcomed.
+Thank you
